@@ -1,0 +1,786 @@
+body {
+  margin: 0;
+  font-family: "Satoshi", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "Satoshi", source-code-pro, Menlo, Monaco, Consolas,
+    "Courier New", monospace;
+}
+html,
+body {
+  background-color: rgb(1, 40, 80);
+  width: 100%;
+  color: ghostwhite;
+  font-family: "Lato", sans-serif;
+  height: 100%;
+  margin-left: auto;
+  caret-color: rgb(4, 238, 81);
+  font-size: 14px;
+}
+.allProjects {
+  max-width: 100%;
+}
+.bodyPanel {
+  position: fixed;
+  z-index: 1;
+  background-color: transparent;
+  width: 2vw;
+  height: 100%;
+  color: rgb(0, 215, 255);
+  border-right: solid 0.5vh;
+  border-image: linear-gradient(
+      180deg,
+      rgb(4, 238, 81) 0%,
+      rgb(2, 117, 216) 25%,
+      rgb(4, 238, 81) 50%,
+      rgb(2, 117, 216) 75%,
+      rgb(4, 238, 81) 100%
+    )
+    1;
+}
+
+.rotateText {
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  rotate: 10deg;
+  color: ghostwhite;
+  transition: linear 0.5s;
+  animation: infinite;
+}
+.rotateText > img {
+  width: 7vw;
+  height: auto;
+  border: solid 1vh;
+  border-image: linear-gradient(
+      135deg,
+      blue 0%,
+      green 33%,
+      blue 66%,
+      green 100%
+    )
+    1;
+}
+.rotateText:hover {
+  rotate: 370deg;
+}
+.includingPanel {
+  max-width: 100vw;
+  display: flex;
+}
+
+/* //NAVBAR CLOSE WHEN CLICK OUTSIDE MENU */
+.navbar {
+  /*   z-index should be above .close-navbar-toggler */
+  z-index: 2;
+  background-color: rgb(1, 40, 80);
+  border-bottom: solid black 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.2rem);
+  -webkit-backdrop-filter: blur(0.2rem);
+}
+.close-navbar-toggler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  cursor: pointer;
+}
+.close-navbar-toggler.collapsed {
+  z-index: -1;
+}
+
+nav {
+  display: flex;
+  flex-wrap: no-wrap;
+}
+nav > div {
+  width: 100%;
+}
+.nav-link {
+  /* background-color: rgb(2, 117, 216); */
+  border-right: 0.4vh solid rgb(2, 117, 216);
+  color: gold;
+  margin-left: 1vw;
+}
+.nav-link:hover {
+  transition: ease background-color 1.5s;
+  background-color: black;
+  border-radius: 2rem;
+}
+.navbar-brand {
+  font-family: monospace;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  /* border-bottom: 0.4vh rgb(4,238,81) solid; */
+
+  /* border-top: rgb(4,238,81) 0.4vh solid; */
+  /* border-bottom: black 0.4vh solid; */
+  margin-left: 1vw;
+}
+.navbar-brand:hover {
+  transition: ease background-color 1.5s;
+  background-color: black;
+}
+
+.borderRight {
+  /* border-right: 0.4vh solid rgb(2, 117, 216); */
+  margin-right: 1vh;
+}
+
+.main1 > div {
+  background-color: black;
+}
+.main1 > div:nth-of-type(2) {
+  background-color: blue;
+}
+.div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.btn {
+  color: ghostwhite;
+  transition: all 0.25s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(1, 40, 80);
+  text-decoration: none;
+}
+
+.btn:hover {
+  border-color: rgb(4, 238, 81);
+  color: ghostwhite;
+  box-shadow: 0 0.5em 0.5em -0.4em rgb(4, 238, 81);
+  transform: translateY(-0.15em);
+  transition: ease background-color 1.5s;
+  background-color: rgb(2, 117, 216);
+}
+::selection {
+  color: rgb(0, 215, 255);
+}
+
+a {
+  text-decoration: none;
+  /* color: rgb(2, 117, 216); */
+}
+a:hover {
+  color: rgb(2, 117, 216);
+  text-decoration: none;
+}
+img {
+  width: 50px;
+  height: auto;
+  max-width: max-content;
+}
+
+.bothSides {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1vh black solid;
+  border-bottom: 1vh black solid;
+  margin-bottom: 5vh;
+  background-color: rgb(230, 230, 230);
+}
+.textSide,
+.imageSide {
+  width: 50%;
+  max-height: 80vh;
+  color: rgb(2, 117, 216);
+}
+.text-primary {
+  align-self: auto;
+}
+
+p,
+h1,
+h2 {
+  margin-left: 4vw;
+  margin-right: 4vw;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+}
+
+.navBar {
+  border-bottom: solid black 1vh;
+  border-top: black solid 1vh;
+  background-color: rgba(1, 40, 80, 0.9);
+  color: rgb(4, 238, 81);
+}
+.carousel {
+  max-height: 85vh;
+  display: flex;
+}
+.quote {
+  /* background: url("../public/codePortfolio.jpg"); */
+  /* background: url("../public/alternatePortfolioPic.jpg"); */
+  display: flex;
+  justify-content: center;
+  color: ghostwhite;
+  align-items: center;
+  text-align: center;
+}
+.downArrow {
+  height: 5%;
+  width: 5%;
+}
+.moreAboutMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.techs {
+  text-align: center;
+}
+
+.footer {
+  border-top: solid 0.5vh;
+  border-bottom: solid 0.5vh;
+  border-image: linear-gradient(
+      90deg,
+      rgb(2, 117, 216) ff,
+      rgb(2, 117, 216) ff,
+      rgb(2, 137, 194),
+      rgb(2, 137, 194),
+      rgb(3, 157, 171),
+      rgb(3, 157, 171),
+      rgb(3, 198, 126),
+      rgb(3, 198, 126),
+      rgb(4, 218, 104),
+      rgb(4, 238, 81) ff,
+      rgb(4, 218, 104),
+      rgb(3, 198, 126),
+      rgb(3, 198, 126),
+      rgb(3, 157, 171),
+      rgb(3, 157, 171),
+      rgb(2, 137, 194),
+      rgb(2, 137, 194),
+      rgb(2, 117, 216) ff,
+      rgb(2, 117, 216) ff
+    )
+    1;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+  /* border-bottom: black solid 1vh; */
+}
+::-webkit-scrollbar {
+  width: 2vh;
+}
+/* the scrollbar. */
+/* ::-webkit-scrollbar-button { */
+/* background: black; */
+/* height: 1vh; */
+/* border-radius: 50%; */
+/* } */
+/* the buttons on the scrollbar (arrows pointing upwards and downwards). */
+::-webkit-scrollbar-thumb {
+  background: rgb(2, 117, 216);
+  border-radius: 2rem;
+  border: 0.6vh solid rgb(1, 40, 80);
+}
+/* the draggable scrolling handle. */
+::-webkit-scrollbar-track {
+  background: orange;
+}
+/* the track (progress bar) of the scrollbar. */
+::-webkit-scrollbar-track-piece {
+  background: rgb(1, 40, 80);
+}
+/* the track (progress bar) NOT covered by the handle. */
+::-webkit-scrollbar-corner {
+  background: black;
+}
+/* the bottom corner of the scrollbar, where both horizontal and vertical scrollbars meet. */
+::-webkit-resizer {
+  background: rgb(4, 238, 81);
+}
+/* the draggable resizing handle that appears at the bottom corner of some elements. */
+
+.divRows {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+.even {
+  height: 3vh;
+  width: 3vw;
+  background-color: black;
+  border-radius: 30% 0%;
+  border: solid black 0.4vh;
+}
+.odd {
+  height: 3vh;
+  width: 3vw;
+  background-color: rgb(4, 238, 81);
+  /* border-radius: 80% 0%; */
+  border-radius: 30% 0%;
+  border: solid black 0.4vh;
+}
+
+.even:hover,
+.odd:hover {
+  border-radius: 0% 30%;
+  background-color: red;
+}
+.fillerOnly {
+  background-color: rgb(64, 66, 88);
+}
+
+.downloadCV {
+  min-width: max-content;
+  width: 60vw;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(222, 32%, 12%);
+  color: ghostwhite;
+  margin: auto;
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  border: 1vh solid rgb(4, 238, 81);
+}
+.resumeLink {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.donwloadImages {
+  width: 2.5vh;
+  height: 2.5vh;
+}
+
+.sideOfForm {
+  /* background-color: lightblue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4vh;
+  text-align: center;
+  color: ghostwhite;
+  /* background: url("../public/whiteBackground.jpg"); */
+  /* background-size: cover; */
+  /* border-radius: 15% 0 0 15%; */
+  border-top: solid rgb(2, 117, 216);
+  /* border-left: solid rgb(2, 117, 216); */
+  border-bottom: solid rgb(2, 117, 216);
+  margin: auto;
+  height: 48vh;
+  margin-top: 0.5vh;
+}
+.formButton {
+  border: none;
+}
+.emailSpam {
+  color: rgb(1, 40, 80);
+}
+.aGreenOne {
+  color: rgb(4, 238, 81);
+}
+.aboutMePicture {
+  width: 20vh;
+  height: 20vh;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+.niceEffect {
+  color: var(--purple-color);
+  text-shadow: 0 0 5px rgb(2, 117, 216), 0 0 2px rgb(2, 117, 216),
+    0 0 2px rgb(2, 117, 216), 0 0 8px rgb(2, 117, 216),
+    0 0 12px rgb(2, 117, 216), 0 0 15px rgb(2, 117, 216),
+    0 0 10px rgb(2, 117, 216), 0 0 15px rgb(2, 117, 216);
+}
+.niceEffect2 {
+  color: var(--purple-color);
+  text-shadow: 0 0 5px red, 0 0 2px red, 0 0 2px red, 0 0 8px red, 0 0 12px red,
+    0 0 15px red, 0 0 10px red, 0 0 15px red;
+}
+
+.neonText {
+  text-shadow: 0.03em 0 0 rgb(255 0 0 / 50%),
+    -0.023em -0.03em 0 rgb(0 128 0 / 50%), 0.023em 0.03em 0 rgb(0 0 255 / 50%);
+}
+
+.pattern {
+  background-color: rgb(4, 238, 81);
+  opacity: 0.6;
+  background-image: linear-gradient(135deg, black 25%, transparent 25%),
+    linear-gradient(225deg, black 25%, transparent 25%),
+    linear-gradient(45deg, black 25%, transparent 25%),
+    linear-gradient(315deg, black 25%, rgb(4, 238, 81) 25%);
+  background-position: 10px 0, 10px 0, 0 0, 0 0;
+  background-size: 20px 20px;
+  background-repeat: repeat;
+}
+
+.gradientColor {
+  background: linear-gradient(180deg, rgb(1, 40, 80), black);
+}
+
+.fillerOnly > ul > li {
+  list-style: none;
+}
+
+.bracketDiv {
+  height: max-content;
+}
+.blue {
+  color: black;
+}
+.red {
+  color: red;
+}
+.bracketDiv > p {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.bracketDiv > .img {
+  width: 100%;
+  border-radius: 50%;
+  border: 1vh solid rgb(4, 238, 81);
+  transition: linear 0.4s;
+}
+.bracketDiv > .img:hover {
+  rotate: 720deg;
+}
+
+.blob {
+  background: url("../public/aboutMeBackground3.svg");
+  width: 90vw;
+}
+
+.transparent {
+  background-color: rgb(0, 215, 255);
+}
+.projectsDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.projectsDiv > div {
+  width: 46%;
+  margin: 2%;
+}
+
+.projectsDiv > div > a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+.projectsDiv > div > a > img {
+  width: 100%;
+  border-radius: 5%;
+  border: rgb(2, 117, 216) solid 0.4vh;
+  height: 100%;
+}
+.projectsDiv > div > a > img:hover {
+  border: gold solid 1vh;
+}
+
+.showcaseDiv {
+  width: 90%;
+  background-color: black;
+  padding-bottom: 5vh;
+}
+.exampleGradientDiv {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.exampleGradientText {
+  background: linear-gradient(
+    90deg,
+    /* rgb(4, 238, 81) 0%,
+    rgb(14, 38, 181) 33%,
+    rgb(40, 1, 181) 66%,
+    rgb(140, 38, 81) 100% */
+      purple 0%,
+    indigo 33%,
+    blue 66%,
+    green 100%,
+    yellow 100%,
+    orange 85%,
+    red 100%
+  );
+  color: transparent;
+  -webkit-text-stroke: 0.2rem transparent;
+  -webkit-background-clip: text;
+  margin-top: 5vh;
+}
+.exampleOutlineGradientDiv {
+  color: black;
+  background: linear-gradient(
+    90deg,
+    rgb(4, 238, 81) 0%,
+    rgb(14, 38, 181) 33%,
+    rgb(40, 1, 181) 66%,
+    rgb(140, 38, 81) 100%
+  );
+  -webkit-text-stroke: 0.2rem transparent;
+  -webkit-background-clip: text;
+}
+.exampleOutlineGradientDiv2 {
+  color: black;
+  background: linear-gradient(90deg, red 0%, blue 33%, brown 66%);
+  -webkit-text-stroke: 0.2rem transparent;
+  -webkit-background-clip: text;
+}
+.bigger {
+}
+.reflection {
+  -webkit-box-reflect: below 0.01rem
+    linear-gradient(rgba(0, 0, 0, 0.5), transparent);
+}
+.gradientPaletteExample {
+  background: linear-gradient(90deg, rgb(0, 215, 255) 0%, rgb(4, 238, 81) 90%);
+  color: transparent;
+  -webkit-text-stroke: 0.2rem transparent;
+  -webkit-background-clip: text;
+  margin-top: 5vh;
+}
+
+.shadowed {
+  border-radius: 4rem;
+  background: rgb(1, 40, 80);
+  box-shadow: 0.8rem 0.8rem 1.8rem black, -0.8rem -0.8rem 1.8rem rgb(29, 64, 99);
+  padding: 1rem;
+}
+.shadowedLess {
+  background: rgb(1, 40, 80);
+  box-shadow: 0.8rem 0.8rem 1.8rem black, -0.8rem -0.8rem 1.8rem rgb(29, 64, 99);
+  padding: 1rem;
+}
+.blueToo {
+  background: rgb(2, 117, 216);
+}
+.centerIt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerName {
+  color: RED;
+}
+.elegant {
+  border-top: black 1vh solid;
+  border-bottom: black 3vh solid;
+  padding-bottom: 3vh;
+}
+/* color of blinking | bar on input data entry */
+.date {
+  color: rgb(0, 215, 255);
+}
+.navbar {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  width: 100%;
+  transition: top 0.7s;
+}
+
+.header2 {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 25%;
+  margin: auto;
+  background: red;
+  border: black solid 1vh;
+  border-radius: 2rem;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  background-color: rgb(4, 238, 81);
+  height: 0.3vh;
+  width: 0%;
+  color: var(--purple-color);
+  box-shadow: 0 0 0.2rem rgb(4, 238, 81), 0 0 0.1rem rgb(4, 238, 81),
+    0 0 0.2rem rgb(4, 238, 81), 0 0 0.3rem rgb(4, 238, 81),
+    0 0 0.2rem rgb(4, 238, 81), 0 0 0.6rem rgb(4, 238, 81),
+    0 0 0.2rem rgb(4, 238, 81), 0 0 0.3rem rgb(4, 238, 81);
+}
+.main1 > div {
+  width: 100%;
+  text-align: center;
+}
+.mainMotivational {
+  background-image: url("../public/wave3.svg");
+  background-size: cover;
+  height: 110vh;
+  width: 90%;
+}
+.motivational {
+  max-width: 100%;
+  height: 70vh;
+  background-image: url("../public/motivational.jpg");
+  background-size: cover;
+  background-color: rgb(0, 215, 255);
+  border: black 1vh solid;
+}
+.motivational2 {
+  min-height: max-content;
+  box-sizing: border-box;
+  min-width: max-content;
+}
+
+.backgroundDiv {
+  background-color: black;
+}
+.gradientText {
+  background: linear-gradient(90deg, rgb(4, 238, 81) 0%, rgb(2, 117, 216) 100%);
+  color: transparent;
+  -webkit-text-stroke: 0.1rem transparent;
+  -webkit-background-clip: text;
+}
+.outlineGradientText {
+  color: black;
+}
+.lastWords {
+  height: max-content;
+  background-color: rgb(4, 238, 81);
+}
+.motivational2 > h3 {
+  justify-content: end;
+  text-align: end;
+}
+.balance {
+  text-align: center;
+  height: auto;
+  background-image: url("../public/space.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 5vh;
+}
+
+.professional {
+  color: rgb(4, 238, 81);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(2, 117, 216);
+  background-color: transparent;
+}
+
+.color-change-2x {
+  -webkit-animation: color-change-2x 12s infinite linear alternate both;
+  animation: color-change-2x 12s infinite linear alternate both;
+}
+@-webkit-keyframes color-change-2x {
+  0% {
+    color: rgb(4, 238, 81);
+  }
+  40% {
+    color: gold;
+  }
+}
+@keyframes color-change-2x {
+  0% {
+    color: rgb(4, 238, 81);
+  }
+  40% {
+    color: gold;
+  }
+}
+.color-change-2x > span {
+  color: rgb(2, 117, 216);
+}
+.color-change-3x {
+  -webkit-animation: color-change-3x 12s infinite linear alternate both;
+  animation: color-change-3x 12s infinite linear alternate both;
+}
+@-webkit-keyframes color-change-3x {
+  0% {
+    background: rgb(4, 238, 81);
+  }
+  40% {
+    background: gold;
+  }
+}
+@keyframes color-change-3x {
+  0% {
+    background: rgb(4, 238, 81);
+  }
+  40% {
+    background: gold;
+  }
+}
+.color-change-4x {
+  -webkit-animation: color-change-4x 10s infinite alternate linear both;
+  animation: color-change-4x 10s infinite alternate linear both;
+}
+@-webkit-keyframes color-change-4x {
+  50% {
+    color: rgb(1, 40, 80);
+  }
+  100% {
+    color: white;
+  }
+}
+@keyframes color-change-4x {
+  50% {
+    color: rgb(1, 40, 80);
+  }
+  100% {
+    color: white;
+  }
+}
+.color-change-5x {
+  -webkit-animation: color-change-5x 10s infinite alternate linear both;
+  animation: color-change-5x 10s infinite alternate linear both;
+}
+@-webkit-keyframes color-change-5x {
+  50% {
+    background: white;
+  }
+  100% {
+    background: rgb(1, 40, 80);
+  }
+}
+@keyframes color-change-5x {
+  50% {
+    background: white;
+  }
+  100% {
+    background: rgb(1, 40, 80);
+  }
+}
+.contact,
+.about,
+.experience {
+  padding-top: 10vh;
+}
+/* regex duplicate remover snippet */
+/* ^\.[\w\-\s\.>:,\[\]\*\=]+{  */
+.greenOne {
+  color: rgb(4, 238, 81);
+  margin-left: 1vw;
+}
