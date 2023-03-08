@@ -1,4 +1,4 @@
-function NIceRow({ oddNumber }) {
+function NIceRow() {
   const gradientBorders = () => {
     return `linear-gradient(
     90deg,
@@ -10,44 +10,42 @@ function NIceRow({ oddNumber }) {
   };
 
   return (
-    <div data-aos="fade-up" data-aos-easing="linear">
-      <div style={{ borderTopColor: gradientBorders() }} className="footer">
-        <div className="divRows">
-          <div className="even color-change-3x"></div>
-          <div className="even color-change-3x"></div>
-          <div className="odd color-change-3x"></div>
-          <div className="odd color-change-3x"></div>
-          <div className="even color-change-3x"></div>
-          <div className="even color-change-3x"></div>
-          <div className="odd color-change-3x"></div>
-          <div className="odd color-change-3x"></div>
-          <div className="even color-change-3x"></div>
-          <div className="even color-change-3x"></div>
-          <div className="odd color-change-3x"></div>
-          <div className="odd color-change-3x"></div>
-          <div className="even color-change-3x"></div>
-          <div className="even color-change-3x"></div>
-          <div className="odd color-change-3x"></div>
-          <div className="odd color-change-3x"></div>
-          <div className="even color-change-3x"></div>
-          <div className="even color-change-3x"></div>
-          <div className="odd color-change-3x"></div>
-          <div className="odd color-change-3x"></div>
-          <div className="even color-change-3x"></div>
-          <div className="even color-change-3x"></div>
-          <div className="odd color-change-3x"></div>
-          <div className="odd color-change-3x"></div>
-          <div className="even color-change-3x"></div>
-          <div className="even color-change-3x"></div>
-          <div className="odd color-change-3x"></div>
-          <div className="odd color-change-3x"></div>
-          <div className="even color-change-3x"></div>
-          <div className="even color-change-3x"></div>
-          <div className="odd color-change-3x"></div>
-          <div className="odd color-change-3x "></div>
-          <div className="even color-change-3x"></div>
-          <div className="even color-change-3x"></div>
-        </div>
+    <div style={{ border: gradientBorders() }} className="footer">
+      <div className="divRows">
+        <div className="even color-change-3x"></div>
+        <div className="even color-change-3x"></div>
+        <div className="odd color-change-3x"></div>
+        <div className="odd color-change-3x"></div>
+        <div className="even color-change-3x"></div>
+        <div className="even color-change-3x"></div>
+        <div className="odd color-change-3x"></div>
+        <div className="odd color-change-3x"></div>
+        <div className="even color-change-3x"></div>
+        <div className="even color-change-3x"></div>
+        <div className="odd color-change-3x"></div>
+        <div className="odd color-change-3x"></div>
+        <div className="even color-change-3x"></div>
+        <div className="even color-change-3x"></div>
+        <div className="odd color-change-3x"></div>
+        <div className="odd color-change-3x"></div>
+        <div className="even color-change-3x"></div>
+        <div className="even color-change-3x"></div>
+        <div className="odd color-change-3x"></div>
+        <div className="odd color-change-3x"></div>
+        <div className="even color-change-3x"></div>
+        <div className="even color-change-3x"></div>
+        <div className="odd color-change-3x"></div>
+        <div className="odd color-change-3x"></div>
+        <div className="even color-change-3x"></div>
+        <div className="even color-change-3x"></div>
+        <div className="odd color-change-3x"></div>
+        <div className="odd color-change-3x"></div>
+        <div className="even color-change-3x"></div>
+        <div className="even color-change-3x"></div>
+        <div className="odd color-change-3x"></div>
+        <div className="odd color-change-3x "></div>
+        <div className="even color-change-3x"></div>
+        <div className="even color-change-3x"></div>
       </div>
     </div>
   );

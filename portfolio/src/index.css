@@ -32,7 +32,7 @@ body {
   width: 2vw;
   height: 100%;
   color: rgb(0, 215, 255);
-  border-right: solid 0.5vh;
+  border-right: solid 021px;
   border-image: linear-gradient(
       180deg,
       rgb(4, 238, 81) 0%,
@@ -56,7 +56,7 @@ body {
 .rotateText > img {
   width: 7vw;
   height: auto;
-  border: solid 1vh;
+  border: solid 3px;
   border-image: linear-gradient(
       135deg,
       blue 0%,
@@ -117,8 +117,8 @@ nav > div {
 }
 .navbar-brand {
   font-family: monospace;
-  padding-left: 2vh;
-  padding-right: 2vh;
+  padding-left: 20px;
+  padding-right: 20px;
   /* border-bottom: 0.4vh rgb(4,238,81) solid; */
 
   /* border-top: rgb(4,238,81) 0.4vh solid; */
@@ -132,11 +132,13 @@ nav > div {
 
 .borderRight {
   /* border-right: 0.4vh solid rgb(2, 117, 216); */
-  margin-right: 1vh;
+  margin-right: 3px;
 }
 
 .main1 > div {
   background-color: black;
+  width: 100%;
+  text-align: center;
 }
 .main1 > div:nth-of-type(2) {
   background-color: blue;
@@ -189,9 +191,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1vh black solid;
-  border-bottom: 1vh black solid;
-  margin-bottom: 5vh;
+  border-top: 3px black solid;
+  border-bottom: 3px black solid;
+  margin-bottom: 20px;
   background-color: rgb(230, 230, 230);
 }
 .textSide,
@@ -207,16 +209,16 @@ img {
 p,
 h1,
 h2 {
-  margin-left: 4vw;
-  margin-right: 4vw;
-  text-align: justify;
+  text-align: center;
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
 .navBar {
-  border-bottom: solid black 1vh;
-  border-top: black solid 1vh;
+  border-bottom: solid black 3px;
+  border-top: black solid 3px;
   background-color: rgba(1, 40, 80, 0.9);
   color: rgb(4, 238, 81);
 }
@@ -247,12 +249,12 @@ h2 {
 }
 
 .footer {
-  border-top: solid 0.5vh;
-  border-bottom: solid 0.5vh;
+  border-top: solid 4px;
+  border-bottom: solid 4px;
   border-image: linear-gradient(
       90deg,
-      rgb(2, 117, 216) ff,
-      rgb(2, 117, 216) ff,
+      rgb(2, 117, 216),
+      rgb(2, 117, 216),
       rgb(2, 137, 194),
       rgb(2, 137, 194),
       rgb(3, 157, 171),
@@ -260,7 +262,7 @@ h2 {
       rgb(3, 198, 126),
       rgb(3, 198, 126),
       rgb(4, 218, 104),
-      rgb(4, 238, 81) ff,
+      rgb(4, 238, 81),
       rgb(4, 218, 104),
       rgb(3, 198, 126),
       rgb(3, 198, 126),
@@ -268,16 +270,16 @@ h2 {
       rgb(3, 157, 171),
       rgb(2, 137, 194),
       rgb(2, 137, 194),
-      rgb(2, 117, 216) ff,
-      rgb(2, 117, 216) ff
+      rgb(2, 117, 216),
+      rgb(2, 117, 216)
     )
     1;
-  margin-bottom: 5vh;
-  margin-top: 5vh;
+  margin-bottom: 20px;
+  margin-top: 20px;
   /* border-bottom: black solid 1vh; */
 }
 ::-webkit-scrollbar {
-  width: 2vh;
+  width: 15px;
 }
 /* the scrollbar. */
 /* ::-webkit-scrollbar-button { */
@@ -311,29 +313,27 @@ h2 {
 
 .divRows {
   display: flex;
-  flex-wrap: nowrap;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  background-color: rgb(1, 40, 80);
+  padding: 10px;
+}
+.even,
+.odd {
+  height: 15px;
+  width: 3vw;
+  border-radius: 30% 0;
 }
 .even {
-  height: 3vh;
-  width: 3vw;
   background-color: black;
-  border-radius: 30% 0%;
   border: solid black 0.4vh;
 }
 .odd {
-  height: 3vh;
-  width: 3vw;
   background-color: rgb(4, 238, 81);
-  /* border-radius: 80% 0%; */
-  border-radius: 30% 0%;
   border: solid black 0.4vh;
 }
 
 .even:hover,
 .odd:hover {
-  border-radius: 0% 30%;
+  border-radius: 0 30%;
   background-color: red;
 }
 .fillerOnly {
@@ -342,26 +342,26 @@ h2 {
 
 .downloadCV {
   min-width: max-content;
-  width: 60vw;
+  width: 50%;
   height: max-content;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: hsl(222, 32%, 12%);
+  background-color: rgb(21, 27, 40);
   color: ghostwhite;
   margin: auto;
   text-align: center;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-  border: 1vh solid rgb(4, 238, 81);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 3px solid rgb(4, 238, 81);
 }
 .resumeLink {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
 .donwloadImages {
-  width: 2.5vh;
-  height: 2.5vh;
+  width: 221px;
+  height: 221px;
 }
 
 .sideOfForm {
@@ -380,7 +380,7 @@ h2 {
   border-bottom: solid rgb(2, 117, 216);
   margin: auto;
   height: 48vh;
-  margin-top: 0.5vh;
+  margin-top: 021px;
 }
 .formButton {
   border: none;
@@ -455,7 +455,7 @@ h2 {
 .bracketDiv > .img {
   width: 100%;
   border-radius: 50%;
-  border: 1vh solid rgb(4, 238, 81);
+  border: 3px solid rgb(4, 238, 81);
   transition: linear 0.4s;
 }
 .bracketDiv > .img:hover {
@@ -464,7 +464,8 @@ h2 {
 
 .blob {
   background: url("../public/aboutMeBackground3.svg");
-  width: 90vw;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .transparent {
@@ -493,13 +494,13 @@ h2 {
   height: 100%;
 }
 .projectsDiv > div > a > img:hover {
-  border: gold solid 1vh;
+  border: gold solid 3px;
 }
 
 .showcaseDiv {
   width: 90%;
   background-color: black;
-  padding-bottom: 5vh;
+  padding-bottom: 20px;
 }
 .exampleGradientDiv {
   background-color: black;
@@ -512,9 +513,9 @@ h2 {
   background: linear-gradient(
     90deg,
     /* rgb(4, 238, 81) 0%,
-    rgb(14, 38, 181) 33%,
-    rgb(40, 1, 181) 66%,
-    rgb(140, 38, 81) 100% */
+      rgb(14, 38, 181) 33%,
+      rgb(40, 1, 181) 66%,
+      rgb(140, 38, 81) 100% */
       purple 0%,
     indigo 33%,
     blue 66%,
@@ -525,8 +526,9 @@ h2 {
   );
   color: transparent;
   -webkit-text-stroke: 0.2rem transparent;
+  background-clip: border-box;
   -webkit-background-clip: text;
-  margin-top: 5vh;
+  margin-top: 20px;
 }
 .exampleOutlineGradientDiv {
   color: black;
@@ -538,15 +540,15 @@ h2 {
     rgb(140, 38, 81) 100%
   );
   -webkit-text-stroke: 0.2rem transparent;
+  background-clip: border-box;
   -webkit-background-clip: text;
 }
 .exampleOutlineGradientDiv2 {
   color: black;
   background: linear-gradient(90deg, red 0%, blue 33%, brown 66%);
   -webkit-text-stroke: 0.2rem transparent;
+  background-clip: border-box;
   -webkit-background-clip: text;
-}
-.bigger {
 }
 .reflection {
   -webkit-box-reflect: below 0.01rem
@@ -556,8 +558,9 @@ h2 {
   background: linear-gradient(90deg, rgb(0, 215, 255) 0%, rgb(4, 238, 81) 90%);
   color: transparent;
   -webkit-text-stroke: 0.2rem transparent;
+  background-clip: border-box;
   -webkit-background-clip: text;
-  margin-top: 5vh;
+  margin-top: 20px;
 }
 
 .shadowed {
@@ -582,12 +585,12 @@ h2 {
 }
 
 .footerName {
-  color: RED;
+  color: red;
 }
 .elegant {
-  border-top: black 1vh solid;
-  border-bottom: black 3vh solid;
-  padding-bottom: 3vh;
+  border-top: black 3px solid;
+  border-bottom: black 15px solid;
+  padding-bottom: 15px;
 }
 /* color of blinking | bar on input data entry */
 .date {
@@ -613,29 +616,26 @@ h2 {
   width: 25%;
   margin: auto;
   background: red;
-  border: black solid 1vh;
+  border: black solid 3px;
   border-radius: 2rem;
 }
 
 /* The progress bar (scroll indicator) */
 .progress-bar {
   background-color: rgb(4, 238, 81);
-  height: 0.3vh;
-  width: 0%;
+  height: 10px;
+  width: 0;
   color: var(--purple-color);
   box-shadow: 0 0 0.2rem rgb(4, 238, 81), 0 0 0.1rem rgb(4, 238, 81),
     0 0 0.2rem rgb(4, 238, 81), 0 0 0.3rem rgb(4, 238, 81),
     0 0 0.2rem rgb(4, 238, 81), 0 0 0.6rem rgb(4, 238, 81),
     0 0 0.2rem rgb(4, 238, 81), 0 0 0.3rem rgb(4, 238, 81);
 }
-.main1 > div {
-  width: 100%;
-  text-align: center;
-}
+
 .mainMotivational {
   background-image: url("../public/wave3.svg");
   background-size: cover;
-  height: 110vh;
+  height: 80vh;
   width: 90%;
 }
 .motivational {
@@ -644,7 +644,7 @@ h2 {
   background-image: url("../public/motivational.jpg");
   background-size: cover;
   background-color: rgb(0, 215, 255);
-  border: black 1vh solid;
+  border: black 3px solid;
 }
 .motivational2 {
   min-height: max-content;
@@ -659,6 +659,7 @@ h2 {
   background: linear-gradient(90deg, rgb(4, 238, 81) 0%, rgb(2, 117, 216) 100%);
   color: transparent;
   -webkit-text-stroke: 0.1rem transparent;
+  background-clip: border-box;
   -webkit-background-clip: text;
 }
 .outlineGradientText {
@@ -678,7 +679,7 @@ h2 {
   background-image: url("../public/space.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding-bottom: 5vh;
+  padding-bottom: 20px;
 }
 
 .professional {
@@ -688,6 +689,7 @@ h2 {
   align-items: center;
   color: rgb(2, 117, 216);
   background-color: transparent;
+  font-size: 50px;
 }
 
 .color-change-2x {
@@ -783,4 +785,36 @@ h2 {
 .greenOne {
   color: rgb(4, 238, 81);
   margin-left: 1vw;
+}
+/* All Projects Div */
+.allProjects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px;
+}
+
+/* Technologies I've Worked With H2 */
+.techs {
+  text-align: center;
+}
+
+/* Main1 and Main2 Divs */
+.main1,
+.main2 {
+  margin: 10px 0;
+}
+
+/* Projects Div */
+.projectsDiv {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Project Images */
+.projectsDiv img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }

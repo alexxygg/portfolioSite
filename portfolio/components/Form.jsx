@@ -93,7 +93,6 @@ function Form() {
         >
           Click to: &nbsp; ***DOWNLOAD MY RESUME***
         </a>
-        {/* <img className="donwloadImages" src="./download.png" /> */}
       </button>
     </div>
   );
