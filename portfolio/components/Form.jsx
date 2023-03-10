@@ -35,7 +35,7 @@ function Form() {
             </label>
             <input
               type="email"
-              name="_replyto"
+              name="replyTo"
               className="exampleInputEmail1 shadowedLess bg-white form-control"
               aria-describedby="emailHelp"
               placeholder="Enter email"

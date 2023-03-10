@@ -23,7 +23,7 @@ body {
   font-size: 14px;
 }
 .allProjects {
-  max-width: 100%;
+  width: 100%;
 }
 .bodyPanel {
   position: fixed;
@@ -106,9 +106,10 @@ nav > div {
 }
 .nav-link {
   /* background-color: rgb(2, 117, 216); */
-  border-right: 0.4vh solid rgb(2, 117, 216);
+  border-right: solid rgb(2, 117, 216);
   color: gold;
   margin-left: 1vw;
+  height: auto;
 }
 .nav-link:hover {
   transition: ease background-color 1.5s;
@@ -236,8 +237,8 @@ h2 {
   text-align: center;
 }
 .downArrow {
-  height: 5%;
-  width: 5%;
+  height: 50px;
+  width: 50px;
 }
 .moreAboutMe {
   display: flex;
@@ -478,10 +479,21 @@ h2 {
   align-items: center;
 }
 .projectsDiv > div {
-  width: 46%;
-  margin: 2%;
+  width: 150px;
+  height: auto;
+  margin: 20px;
 }
-
+.projectsDiv > div > p {
+  margin-bottom: 10px;
+  background-color: gold;
+  color: black;
+  font-weight: 900;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.goldColor {
+  color: gold;
+}
 .projectsDiv > div > a {
   text-decoration: none;
   width: 100%;
@@ -571,8 +583,8 @@ h2 {
 }
 .shadowedLess {
   background: rgb(1, 40, 80);
-  box-shadow: 0.8rem 0.8rem 1.8rem black, -0.8rem -0.8rem 1.8rem rgb(29, 64, 99);
-  padding: 1rem;
+  box-shadow: 5px 5px 15px black, -5px -5px 15px rgb(29, 64, 99);
+  padding: 10px;
 }
 .blueToo {
   background: rgb(2, 117, 216);
@@ -595,6 +607,7 @@ h2 {
 /* color of blinking | bar on input data entry */
 .date {
   color: rgb(0, 215, 255);
+  font-size: 14px;
 }
 .navbar {
   position: fixed;
@@ -774,47 +787,4 @@ h2 {
   100% {
     background: rgb(1, 40, 80);
   }
-}
-.contact,
-.about,
-.experience {
-  padding-top: 10vh;
-}
-/* regex duplicate remover snippet */
-/* ^\.[\w\-\s\.>:,\[\]\*\=]+{  */
-.greenOne {
-  color: rgb(4, 238, 81);
-  margin-left: 1vw;
-}
-/* All Projects Div */
-.allProjects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 50px;
-}
-
-/* Technologies I've Worked With H2 */
-.techs {
-  text-align: center;
-}
-
-/* Main1 and Main2 Divs */
-.main1,
-.main2 {
-  margin: 10px 0;
-}
-
-/* Projects Div */
-.projectsDiv {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
-/* Project Images */
-.projectsDiv img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
 }

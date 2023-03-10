@@ -33,7 +33,6 @@ function FillerOnly() {
           </div>
         </div>
       </div>
-      <span className="ml-5">[Stock photo]</span>
     </div>
   );
 }

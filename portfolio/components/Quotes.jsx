@@ -1,4 +1,3 @@
-import BelowQuote from "./BelowQuote";
 import { theQuotes } from "../src/theQuotes";
 
 const quoteMaker = () => {
@@ -11,8 +10,7 @@ function Quotes() {
   return (
     <>
       {" "}
-      <h2 className="date">{date}</h2>
-      <BelowQuote />
+      <h2 className="date">({date})</h2>
       <div thevalue={theQuotes} className="quote niceEffect">
         {/* “Have no fear of perfection. You'll never reach it.” - Salvador Dali */}
         {quoteMaker()} <br />

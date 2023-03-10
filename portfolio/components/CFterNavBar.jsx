@@ -10,9 +10,14 @@ function CFterNavBar() {
           {" "}
           RESULTS
         </h3>{" "}
-        <h3 className="gradientText outlineGradientText row col"> YOU</h3>{" "}
-        <h3 className="gradientText outlineGradientText row col"> ARE</h3>{" "}
-        <h3 className="gradientText outlineGradientText row col"> LOOKING</h3>{" "}
+        <h3 className="gradientText outlineGradientText row col">
+          {" "}
+          YOU'RE
+        </h3>{" "}
+        <h3 className="gradientText outlineGradientText row col">
+          {" "}
+          LOOKING
+        </h3>{" "}
         <h3 className="gradientText outlineGradientText row col"> FOR.</h3>
         <h3 className="lastWords">Every Time</h3>
       </div>

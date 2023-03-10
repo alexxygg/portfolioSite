@@ -1,8 +1,8 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import AfterNav from "../components/AfterNav";
-import FillerOnly from "../components/FillerOnly";
-import BfterNav from "../components/BfterNav";
+import AboutDev from "../components/AboutDev";
+import StackNprojects from "../components/StackNprojects";
 import Footer from "../components/Footer";
 import CFterNavBar from "../components/CFterNavBar";
 import NIceRow from "../components/NIceRow";
@@ -21,11 +21,11 @@ function App() {
       <NIceRow oddNumber="1" />
       <ShowCasing />
       <NIceRow oddNumber="2" />
-      <BfterNav />
+      <StackNprojects />
       <NIceRow oddNumber="3" />
       <CFterNavBar />
       <NIceRow oddNumber="4" />
-      <FillerOnly />
+      <AboutDev />
       <NIceRow oddNumber="5" />
       <Balance quote="Make your websites feel ALIVE." />
       <NIceRow oddNumber="6" />
