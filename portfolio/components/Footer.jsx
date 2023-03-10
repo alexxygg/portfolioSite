@@ -11,7 +11,7 @@ function Footer() {
           Designed and coded by Alejandro Perez
         </a>
       </div>
-      Arekushīgu アレクシーグ
+      アレクシーグ
     </footer>
   );
 }
