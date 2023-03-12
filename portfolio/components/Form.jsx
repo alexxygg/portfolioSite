@@ -30,6 +30,7 @@ function Form() {
           onSubmit={handleSubmit}
           data-netlify="true"
           name="contact"
+          method="POST"
         >
           <input type="hidden" name="form-name" value="contact" />
           <div className="form-group">
