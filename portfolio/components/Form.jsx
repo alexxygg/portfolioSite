@@ -14,9 +14,8 @@ function Form() {
           data-netlify="true"
           name="contact"
           method="POST"
-          netlify
         >
-          <input type="hidden" name="contact" value="contact" />
+          <input type="hidden" name="form-name" value="contact" />
           <div className="form-group">
             <label htmlFor="exampleInputName1" className="text-primary">
               Name
