@@ -1,15 +1,6 @@
 import UnderForm from "./UnderForm";
-import axios from "axios";
 
 function Form() {
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    const form = event.target;
-    const formData = new FormData(form);
-    const response = await axios.post("/?no-cache=1", formData);
-    console.log(response); // Log the response from the server
-    form.reset(); // Clear the form fields
-  };
   return (
     <div className="contact col-11 m-auto" data-aos="fade-up">
       <h1 className="shadowed mb-5 contactH1 color-change-2x ">Contact</h1>{" "}
@@ -20,8 +11,6 @@ function Form() {
       <div className="  row w-100 m-auto">
         <form
           className="col col-10 col-lg-5 m-auto theForm"
-          encType="text/plain"
-          onSubmit={handleSubmit}
           data-netlify="true"
           name="contact"
           method="POST"
