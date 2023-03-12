@@ -24,7 +24,7 @@ function NavBar() {
                 className="nav-link color-change-2x nav-link borderRight"
                 href="#"
               >
-                Top
+                Back to top
               </a>
               <a
                 className="nav-link color-change-2x nav-link borderRight"
