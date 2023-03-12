@@ -6,7 +6,7 @@ function Form() {
     event.preventDefault();
     const form = event.target;
     const formData = new FormData(form);
-    const response = await axios.post("/", formData);
+    const response = await axios.post("/?no-cache=1", formData);
     console.log(response); // Log the response from the server
     form.reset(); // Clear the form fields
   };
