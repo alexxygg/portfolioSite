@@ -1,19 +1,13 @@
 import UnderForm from "./UnderForm";
+import axios from "axios";
 
 function Form() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const form = event.target;
     const formData = new FormData(form);
-    const response = await fetch(form.action, {
-      method: form.method,
-      body: formData,
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-    });
-    const data = await response.text();
-    console.log(data); // Log the response from the server
+    const response = await axios.post("/", formData);
+    console.log(response); // Log the response from the server
     form.reset(); // Clear the form fields
   };
   return (
@@ -31,8 +25,9 @@ function Form() {
           data-netlify="true"
           name="contact"
           method="POST"
+          netlify
         >
-          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="contact" value="contact" />
           <div className="form-group">
             <label htmlFor="exampleInputName1" className="text-primary">
               Name
