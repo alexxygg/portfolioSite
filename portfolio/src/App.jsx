@@ -5,10 +5,10 @@ import Quotes from "../components/Quotes";
 import AboutDev from "../components/AboutDev";
 import StackNprojects from "../components/StackNprojects";
 import Footer from "../components/Footer";
-import CFterNavBar from "../components/CFterNavBar";
+import ResultsSection from "../components/ResultsSection";
 import NIceRow from "../components/NIceRow";
 import Form from "../components/Form";
-import ShowCasing from "../components/ShowCasing";
+import Experience from "../components/Experience";
 import Panel from "../components/Panel";
 import ProgressBar from "../components/ProgressBar";
 import Balance from "../components/Balance";
@@ -21,11 +21,11 @@ function App() {
       <Carrousel />
       <Quotes />
       <NIceRow oddNumber="1" />
-      <ShowCasing />
+      <Experience />
       <NIceRow oddNumber="2" />
       <StackNprojects />
       <NIceRow oddNumber="3" />
-      <CFterNavBar />
+      <ResultsSection />
       <NIceRow oddNumber="4" />
       <AboutDev />
       <NIceRow oddNumber="5" />

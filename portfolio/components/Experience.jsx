@@ -1,4 +1,4 @@
-function ShowCasing() {
+function Experience() {
   return (
     <div data-aos="fade-up" id="experience">
       {" "}
@@ -19,4 +19,4 @@ function ShowCasing() {
   );
 }
 
-export default ShowCasing;
+export default Experience;

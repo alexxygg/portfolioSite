@@ -1,8 +1,8 @@
 function BfterNav() {
   return (
-    <div className="includingPanel">
-      <div className="allProjects">
-        <h2 className="mb-5 techs shadowed color-change-2x">
+    <div className="includingPanel col-11 m-auto">
+      <div className="allProjects ">
+        <h2 className="mb-5 techs shadowed color-change-2x ">
           Technologies I've worked with:
         </h2>
         <div className="main1">
@@ -62,7 +62,7 @@ function BfterNav() {
         </div>
         <div className="main2">
           <h2 className="mb-5 shadowed color-change-2x">My projects </h2>
-          <div className=" projectsDiv col-10   m-auto ">
+          <div className=" projectsDiv m-auto ">
             <div>
               <p className="text-center">Calculator (Netlify)</p>
               <a href="https://alexxyggcalculator.netlify.app/" target="_blank">

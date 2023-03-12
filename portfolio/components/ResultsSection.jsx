@@ -1,4 +1,4 @@
-function CFterNavBar() {
+function ResultsSection() {
   return (
     <div
       data-aos="fade-up"
@@ -26,4 +26,4 @@ function CFterNavBar() {
     </div>
   );
 }
-export default CFterNavBar;
+export default ResultsSection;
