@@ -21,7 +21,6 @@ function Form() {
             </label>
             <input
               type="text"
-              name="name"
               className="exampleInputName1 shadowedLess bg-white form-control"
               aria-describedby="nameHelp"
               placeholder="Enter name"
@@ -33,7 +32,6 @@ function Form() {
             </label>
             <input
               type="email"
-              name="replyTo"
               className="exampleInputEmail1 shadowedLess bg-white form-control"
               aria-describedby="emailHelp"
               placeholder="Enter email"
@@ -48,7 +46,6 @@ function Form() {
             </label>
             <textarea
               type="text"
-              name="message"
               className="exampleInputMessage1 shadowedLess bg-white form-control mb-5"
               placeholder="Leave me a message"
             ></textarea>{" "}
