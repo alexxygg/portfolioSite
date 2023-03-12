@@ -15,7 +15,6 @@ function Form() {
           name="contact"
           method="POST"
         >
-          <input type="hidden" name="form-name" value="contact" />
           <div className="form-group">
             <label htmlFor="exampleInputName1" className="text-primary">
               Name
