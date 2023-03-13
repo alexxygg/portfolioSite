@@ -3,14 +3,19 @@ import UnderForm from "./UnderForm";
 function Form() {
   return (
     <div className="contact col-11 m-auto" data-aos="fade-up">
-      <h1 className="shadowed mb-5 contactH1 color-change-2x ">Contact</h1>{" "}
+      <h1 className="shadowed mb-5 contactH1 color-change-2x bracketDiv">
+        Contact
+      </h1>{" "}
       <h3 className="mb-5 text-center">
         Thank you for checking out my portfolio! <br />
         You can leave your details below, or send me an email!
       </h3>{" "}
+      <div className="shadowedLess mb-5 text-center text-bg-danger">
+        Form currently disabled.
+      </div>
       <div className="  row w-100 m-auto">
         <form
-          className="col col-10 col-lg-5 m-auto theForm"
+          className="col col-10 col-lg-5 m-auto theForm "
           data-netlify="true"
           name="contact"
           method="POST"

@@ -2,7 +2,7 @@ function BfterNav() {
   return (
     <div className="includingPanel col-11 m-auto">
       <div className="allProjects ">
-        <h2 className="mb-5 techs shadowed color-change-2x ">
+        <h2 className="mb-5 techs shadowed color-change-2x bracketDiv">
           Technologies I've worked with:
         </h2>
         <div className="main1">
@@ -61,7 +61,9 @@ function BfterNav() {
           <p className="mb-5">(Opens in a NEW TAB)</p>
         </div>
         <div className="main2">
-          <h2 className="mb-5 shadowed color-change-2x">My projects </h2>
+          <h2 className="mb-5 shadowed color-change-2x bracketDiv">
+            My projects{" "}
+          </h2>
           <div className=" projectsDiv m-auto ">
             <div>
               <p className="text-center">Calculator (Netlify)</p>
