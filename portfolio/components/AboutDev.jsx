@@ -13,30 +13,24 @@ function FillerOnly() {
         </div>
         <div className="shadowedLess m-auto col-7">
           <div className="fillerOnly gradientColor text-center color-change-5x ">
-            <h4 className="m-0 color-change-4x">
-              I am passionate and enjoy front-end technologies, giving all my
-              effort on every project I get. Hope to work with you soon!
-            </h4>
-            <div className="bracketDiv">
-              <li>
-                <p className="color-change-4x">
-                  I love the tech world and am always looking for the next tech
-                  to learn, I consider adapting very important.
-                </p>
-              </li>
-            </div>
-            <div className=" bracketDiv">
-              <li>
-                <p className="color-change-4x">
-                  I like petting dogs and cats. :D
-                </p>
-              </li>
-            </div>
-            <div className=" bracketDiv">
-              <li>
-                <p className="color-change-4x">I am 23 years old. (1999)</p>
-              </li>
-            </div>
+            <h5 className="m-0 color-change-4x">
+              Hi, my name is Alejandro Perez, a passionate 23-year-old front-end
+              and back-end developer who is dedicated to producing high-quality
+              work. As a recent graduate seeking an entry-level position as a
+              Jr. Dev, I have experience working with a range of technologies
+              including HTML, CSS, JavaScript, Bootstrap, React,React Router,
+              Next.js, EJS, Vite, MongoDB, Supabase, Node, and more. I approach
+              every project with enthusiasm and take pride in my ability to
+              problem-solve and deliver solutions that meet my clients' needs.
+              Whether I'm working on the front-end or back-end, I always strive
+              to create efficient code that is easy to maintain and build upon.{" "}
+              <br /> Current laptop has Ryzen7 and 16GB RAM, I'm well-equipped
+              to tackle even the most complex projects. I'm eager to continue
+              expanding my skills and experience as a developer and am excited
+              to take on new challenges in a professional setting.
+              <div></div> <br /> Hope to work with you soon!
+              <div></div>{" "}
+            </h5>
           </div>
         </div>
       </div>
