@@ -1,9 +1,9 @@
 function NavBar() {
   return (
     <div classNameName="navBar">
-      <nav className="navbar navbar-expand-lg  fixed-top">
+      <nav className="navbar navbar-expand-md  fixed-top">
         <div className="container-fluid">
-          <a className="navbar-brand pt-0 pb-0 color-change-2x ">
+          <a className="navbar-brand pt-0 pb-0 text-danger">
             <span>[</span>alexxygg
             <span>]</span>
           </a>

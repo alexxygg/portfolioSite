@@ -106,10 +106,15 @@ nav > div {
 }
 .nav-link {
   /* background-color: rgb(2, 117, 216); */
-  border-right: solid rgb(2, 117, 216);
+  border-left: solid rgb(2, 117, 216) 2px;
+  border-right: solid rgb(2, 117, 216) 2px;
   color: gold;
   margin-left: 1vw;
-  height: auto;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
 }
 .nav-link:hover {
   transition: ease background-color 1.5s;

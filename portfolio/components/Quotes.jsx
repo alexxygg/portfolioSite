@@ -10,8 +10,8 @@ function Quotes() {
   return (
     <>
       {" "}
-      <h2 className="date">({date})</h2>
-      <div thevalue={theQuotes} className="quote niceEffect">
+      {/* <h2 className="date">({date})</h2> */}
+      <div thevalue={theQuotes} className="quote niceEffect mt-5">
         {/* “Have no fear of perfection. You'll never reach it.” - Salvador Dali */}
         {quoteMaker()} <br />
       </div>

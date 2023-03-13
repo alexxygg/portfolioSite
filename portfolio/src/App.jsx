@@ -8,7 +8,6 @@ import Footer from "../components/Footer";
 import ResultsSection from "../components/ResultsSection";
 import NIceRow from "../components/NIceRow";
 import Form from "../components/Form";
-import Experience from "../components/Experience";
 import Panel from "../components/Panel";
 import ProgressBar from "../components/ProgressBar";
 import Balance from "../components/Balance";
@@ -20,8 +19,6 @@ function App() {
       <NavBar />
       <Carrousel />
       <Quotes />
-      <NIceRow oddNumber="1" />
-      <Experience />
       <NIceRow oddNumber="2" />
       <StackNprojects />
       <NIceRow oddNumber="3" />
