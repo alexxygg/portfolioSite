@@ -1,24 +1,12 @@
 function FillerOnly() {
   return (
     <div data-aos="fade-up" className="about">
-      <div
-        className="bracketDiv shadowed col-11 ml-auto m-auto mb-5 "
-        style={{ borderBottom: "solid rgb(4, 238, 81)" }}
-      >
-        <h1 className="color-change-2x">About Developer:</h1>
-      </div>
-      <div
-        className="row  blob m-auto "
-        style={{ borderBottom: "solid rgb(4, 238, 81)" }}
-      >
-        <div className="bracketDiv2 col-3">
-          <img
-            className="img shadowed m-auto color-change-3x"
-            src="profilePic3.png"
-          />
-        </div>
+      <div className="bracketDiv shadowed col-11 ml-auto m-auto mb-5 ">
+        <h1>About Developer:</h1>
+      </div>{" "}
+      <div className="row  blob m-auto ">
         <div
-          className="shadowedLess m-auto col-8  "
+          className="shadowedLess m-auto col-11  "
           style={{ borderTop: "solid black", borderBottom: "solid black" }}
         >
           <div className="showcaseDiv w-100 aboutFirst">
@@ -26,8 +14,7 @@ function FillerOnly() {
               <div
                 className="my-0 gradientPaletteExample newRule px-4"
                 style={{
-                  borderTop: "solid rgb(4, 238, 81)",
-                  backgroundColor: "black",
+                  borderTop: "solid blue",
                   paddingBottom: "10px",
                   paddingTop: "10px",
                 }}
@@ -46,8 +33,17 @@ function FillerOnly() {
               </div>
             </div>{" "}
           </div>{" "}
-          <div className="fillerOnly gradientColor text-center color-change-5x ">
-            <div className="m-0 color-change-4x aboutText">
+          <div className="fillerOnly gradientColor text-center color-change-5x  ">
+            <div className="bracketDiv">
+              <img
+                className="img2 shadowed color-change-3x my-3"
+                src="profilePic3.png"
+              />
+            </div>{" "}
+            <div
+              className="m-0 color-change-4x aboutText"
+              style={{ zIndex: "8" }}
+            >
               <div className="p-4">
                 Hi, I'm Alex, a passionate 23-year-old who is dedicated to
                 producing high-quality work.{" "}
@@ -72,7 +68,7 @@ function FillerOnly() {
                 to take on new challenges in a professional setting.
               </h6>{" "}
               <h6 className="p-4 text-center">Hope to work with you soon!</h6>{" "}
-            </div>
+            </div>{" "}
           </div>
         </div>
       </div>

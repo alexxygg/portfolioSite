@@ -5,12 +5,7 @@ function Carrousel() {
       data-ride="carousel"
     >
       <div className="carousel-inner">
-        <video className="w-50" autoPlay muted>
-          <source src="./latest.mp4" type="video/mp4" />
-        </video>
-        <video className="w-50" autoPlay muted>
-          <source src="./latest2.mp4" type="video/mp4" />
-        </video>
+        <img src="../public/codePortfolio.jpg" className="img3" alt="" />{" "}
         <div className="text-center">
           Latest Project: debtDynamic (Showcasing copy to click and important
           note features.)

@@ -2,46 +2,68 @@ function BfterNav() {
   return (
     <div className="includingPanel col-11 m-auto">
       <div className="allProjects ">
-        <h2 className="mb-5 techs shadowed color-change-2x bracketDiv">
+        <h2 className="mb-5 techs shadowed  bracketDiv">
           Technologies I've worked with:
-        </h2>
+        </h2>{" "}
         <div className="main1">
+          <div>Languages</div>
+          <div>HTML, CSS, JavaScript</div>
           <nav>
             <div className="div ">
               <img className=" btn" src="html.png" alt="" />
             </div>
-            <div className="div">
+            <div>
               <img className="btn" src="css3.png" alt="" />
             </div>
-            <div className="div">
+            <div>
               <img className="btn" src="javascript.png" alt="" />
-            </div>
-            <div className="div">
-              <img className="btn" src="bootstrap.png" alt="" />
-            </div>
-            <div className="div">
-              <img className="btn" src="react.png" alt="" />
-            </div>
-            <div className="div">
-              <img className="btn" src="node-js.png" alt="" />
-            </div>
-            <div className="div">
-              <img className="btn" src="express.png" alt="" />
             </div>
           </nav>
         </div>
         <div className="main1">
-          <div>Databases</div>
-          <div>MongoDB and Supabase</div>
+          <div>CSS Frameworks</div>
+          <div>Bootstrap</div>
+          <nav>
+            <div>
+              <img className="btn" src="bootstrap.png" alt="" />
+            </div>
+          </nav>
+        </div>
+        <div className="main1">
+          <div>JS Frameworks</div>
+          <div>React</div>
           <nav>
             {" "}
-            <div className="div">
-              <img className="btn" src="nextjs.png" alt="" />
+            <div>
+              <img className="btn" src="react.png" alt="" />
             </div>
-            <div className="div">
+          </nav>
+        </div>{" "}
+        <div className="main1">
+          <div>Backend Routing</div>
+          <div>NextJS, NodeJS and ExpressJS</div>
+          <nav>
+            {" "}
+            <div>
+              <img className="btn" src="nextjs.png" alt="" />
+            </div>{" "}
+            <div>
+              <img className="btn" src="node-js.png" alt="" />
+            </div>
+            <div>
+              <img className="btn" src="express.png" alt="" />
+            </div>
+          </nav>
+        </div>{" "}
+        <div className="main1">
+          <div>Databases</div>
+          <div>Supabase and MongoDB</div>
+          <nav>
+            {" "}
+            <div>
               <img className="btn" src="supabase.png" alt="" />
             </div>
-            <div className="div">
+            <div>
               <img className="btn" src="mongodb.png" alt="" />
             </div>
           </nav>
@@ -51,29 +73,26 @@ function BfterNav() {
             <a
               // target for open link in new tab
               target="_blank"
-              className="btn btn-success"
+              className="btn btn-success mb-5"
               type="button"
               href="https://github.com/alexxygg"
             >
               ***Check my GitHub profile out!***
             </a>
           </h2>
-          <p className="mb-5">(Opens in a NEW TAB)</p>
         </div>
         <div className="main2">
-          <h2 className="mb-5 shadowed color-change-2x bracketDiv">
-            My projects{" "}
-          </h2>
+          <h2 className="mb-5 shadowed  bracketDiv">My projects </h2>
           <div className=" projectsDiv m-auto ">
             <div>
-              <p className="text-center">Calculator (Netlify)</p>
+              <p className="text-center">Calculator</p>
               <a href="https://alexxyggcalculator.netlify.app/" target="_blank">
                 {" "}
                 <img className="shadowedLess" src="./calculatorDemoPic.png" />
               </a>
             </div>
             <div>
-              <p className="text-center">Etch-a-Sketch (Netlify)</p>
+              <p className="text-center">Etch-a-Sketch</p>
               <a
                 href="https://alexxygg-etch-a-sketch.netlify.app/"
                 target="_blank"
@@ -82,13 +101,13 @@ function BfterNav() {
               </a>
             </div>
             <div>
-              <p className="text-center">Rock Paper Scissors (Netlify)</p>
+              <p className="text-center">Rock Paper Scissors</p>
               <a href="https://alexxygg-p-rock-z.netlify.app/" target="_blank">
                 <img className="shadowedLess" src="./rpsDemoPic.png" />
               </a>
             </div>
             <div>
-              <p className="text-center">yelpCamp Clone (Heroku)</p>
+              <p className="text-center">yelpCamp Clone</p>
               <a
                 href="https://alexxygg-yelpcamp.herokuapp.com/"
                 target="_blank"
