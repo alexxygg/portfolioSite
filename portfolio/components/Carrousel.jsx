@@ -5,7 +5,7 @@ function Carrousel() {
       data-ride="carousel"
     >
       <div className="carousel-inner">
-        <img src="../public/codePortfolio.jpg" className="img3" alt="" />{" "}
+        <img src="../public/space.jpg" className="img3" alt="" />{" "}
         <div className="text-center">
           Latest Project: debtDynamic (Showcasing copy to click and important
           note features.)
