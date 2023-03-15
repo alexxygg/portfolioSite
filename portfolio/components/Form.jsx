@@ -6,16 +6,23 @@ function Form() {
       <h1 className="shadowed mb-5 contactH1 color-change-2x bracketDiv">
         Contact
       </h1>{" "}
-      <h3 className="mb-5 text-center">
+      <h3 className=" text-center rgba ">
         Thank you for checking out my portfolio! <br />
         You can leave your details below, or send me an email!
       </h3>{" "}
-      <div className="shadowedLess mb-5 text-center text-bg-danger">
+      <div
+        className=" text-center  my-3"
+        style={{
+          border: "solid white 2px",
+          outline: "solid black 2px",
+          backgroundColor: "red",
+        }}
+      >
         Form currently disabled.
       </div>
-      <div className="  row w-100 m-auto">
+      <div className="  row row2 w-100 m-auto rgba mb-5">
         <form
-          className="col col-10 col-lg-5 m-auto theForm "
+          className="col col-10 col-lg-5 m-auto theForm rgba  "
           data-netlify="true"
           name="contact"
           method="POST"
@@ -27,7 +34,7 @@ function Form() {
             </label>
             <input
               type="text"
-              className="exampleInputName1 shadowedLess bg-white form-control"
+              className="exampleInputName1  bg-white form-control"
               aria-describedby="nameHelp"
               placeholder="Enter name"
             />
@@ -38,7 +45,7 @@ function Form() {
             </label>
             <input
               type="email"
-              className="exampleInputEmail1 shadowedLess bg-white form-control"
+              className="exampleInputEmail1  bg-white form-control"
               aria-describedby="emailHelp"
               placeholder="Enter email"
             />
@@ -52,7 +59,7 @@ function Form() {
             </label>
             <textarea
               type="text"
-              className="exampleInputMessage1 shadowedLess bg-white form-control mb-5"
+              className="exampleInputMessage1  bg-white form-control mb-5"
               placeholder="Leave me a message"
             ></textarea>{" "}
           </div>
@@ -60,7 +67,7 @@ function Form() {
           <button
             type="submit"
             value="Send"
-            className="btn-primary mb-5 w-100 shadowed blueToo submitBtn"
+            className="btn-primary w-100  blueToo submitBtn"
           >
             Send
           </button>

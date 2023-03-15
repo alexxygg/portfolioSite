@@ -21,9 +21,30 @@ body {
   margin-left: auto;
   caret-color: rgb(4, 238, 81);
   font-size: 14px;
+  background-image: url("attemptTransBg.png");
+  background-repeat: repeat-y;
 }
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-size: 110%;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  body {
+    background-size: 200%;
+  }
+}
+
 .allProjects {
   width: 100%;
+}
+.allProjects > .div:nth-of-type(1) {
+  border: solid white 2px;
+  outline: solid black 4px;
+  border-radius: 20px;
+  overflow: hidden;
 }
 .bodyPanel {
   position: fixed;
@@ -107,7 +128,6 @@ nav {
   height: 30px;
   font-family: monospace;
   min-width: max-content;
-
   margin-right: 15px;
   margin-left: 5px;
 }
@@ -134,20 +154,25 @@ nav {
   align-items: center;
   max-width: 100%;
   margin: 0;
+  padding: 10px;
+
+  background-color: rgba(0, 0, 0, 0.9);
 }
 .main1 > div:nth-of-type(1) {
   background-color: blue;
   width: 25%;
   max-width: 25%;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 .main1 > div:nth-of-type(2) {
-  width: 25%;
-  width: 25%;
+  width: 33%;
+  width: 33%;
 }
 .main1 > nav {
   padding: 10px;
-  width: 50%;
-  max-width: 50%;
+  width: 33%;
+  max-width: 33%;
   display: flex;
   justify-content: space-between;
 }
@@ -155,26 +180,6 @@ nav {
   background-color: darkblue;
 }
 
-.btn {
-  color: ghostwhite;
-  transition: all 0.1s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  outline: 1px solid white;
-  text-decoration: none;
-  margin: 0px 5px;
-}
-
-.btn:hover {
-  border-color: blue;
-  color: ghostwhite;
-  box-shadow: 0 5px 5px -5px blue;
-  transform: translateY(-1px);
-  transition: ease background-color 0.1s;
-  background-color: blue;
-}
 ::selection {
   color: blue;
 }
@@ -205,6 +210,10 @@ img {
   border-bottom: 3px black solid;
   margin-bottom: 20px;
   background-color: rgb(230, 230, 230);
+}
+.aboutPicDiv {
+  border: solid white 2px;
+  outline: solid black 2px;
 }
 .textSide,
 .imageSide {
@@ -243,22 +252,31 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black;
 }
 .techs {
   text-align: center;
 }
+
+.btn,
 .submitBtn {
   border: solid black;
-  outline: white solid;
+  outline: rgb(4, 238, 81) solid;
   font-weight: 900;
+  color: white;
+  border-radius: 2rem;
 }
+.btn:hover,
 .submitBtn:hover {
   background-color: rgb(4, 238, 81);
-  transition: all 0.5s linear;
+  transition: all 0.5s ease;
+  color: black !important;
+  outline: solid black;
 }
 .footer {
-  border-top: solid rgb(21, 23, 26) 4px;
-  border-bottom: solid rgb(21, 23, 26) 4px;
+  border-top: solid black 4px;
+
+  border-bottom: solid black 4px;
   /* border-image: linear-gradient(
       90deg,
       blue,
@@ -282,12 +300,15 @@ h2 {
       blue
     )
     1; */
-  margin-bottom: 20px;
-  margin-top: 20px;
+
   /* border-bottom: black solid 1vh; */
 }
 ::-webkit-scrollbar {
   width: 15px;
+}
+.row2 {
+  outline: solid black 2px;
+  border: solid white 2px;
 }
 /* the scrollbar. */
 /* ::-webkit-scrollbar-button { */
@@ -322,16 +343,18 @@ h2 {
 .divRows {
   display: flex;
   padding: 10px;
+  width: 100%;
+  background-color: black;
 }
 .even,
 .odd {
   height: 15px;
   width: 3vw;
-  border-radius: 30% 0;
 }
 .even {
   background-color: blue;
   border: solid black;
+  border-radius: 6px 0;
 }
 .odd {
   background-color: rgb(4, 238, 81);
@@ -341,7 +364,6 @@ h2 {
 .even:hover,
 .odd:hover {
   border-radius: 0 30%;
-  background-color: red;
 }
 .fillerOnly {
   background-color: rgb(64, 66, 88);
@@ -354,15 +376,12 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: ghostwhite;
   margin: auto;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  border: 3px solid blue;
 }
 .resumeLink {
-  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 .donwloadImages {
@@ -396,7 +415,7 @@ h2 {
   border-top: solid blue;
   /* border-left: solid blue; */
   border-bottom: solid blue;
-  height: 330px;
+  height: 370px;
 }
 .newRule {
   width: auto;
@@ -480,6 +499,7 @@ h2 {
   height: max-content;
   color: rgb(4, 238, 81);
   outline: solid blue 2px;
+  margin: 30px 0;
 }
 .blue {
   color: black;
@@ -515,10 +535,20 @@ h2 {
 
 .blob {
   background: url("/aboutMeBackground3.svg");
-  width: 90%;
-  margin: 0 auto;
+  margin: 0;
 }
-
+.contact > .div {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.rgba,
+.rgba2 {
+  background-color: rgba(0, 0, 0, 0.9);
+  margin: 0;
+  padding: 20px;
+}
+.rgba2 {
+  background-color: black;
+}
 .transparent {
   background-color: blue;
 }
@@ -527,6 +557,11 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: stretch;
+  background-color: rgba(0, 0, 0, 0.9);
+  outline: solid black 4px;
+  border: solid white 2px;
+  border-right: none;
+  border-left: none;
 }
 .projectsDiv > div {
   width: 150px;
@@ -536,6 +571,7 @@ h2 {
 .projectsDiv > div > p {
   margin-bottom: 10px;
   background-color: blue;
+  border: solid black;
   border-radius: 2rem;
   color: black;
   font-weight: 900;
@@ -734,9 +770,7 @@ h2 {
 .balance {
   text-align: center;
   height: auto;
-  background-image: url("/space.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: transparent;
   padding-bottom: 20px;
 }
 
@@ -820,12 +854,6 @@ h2 {
   }
 }
 
-a:active,
-a:link,
-a:visited {
-  color: #fff;
-  text-decoration: none !important;
-}
 ul {
   display: flex;
   justify-content: space-around;
@@ -834,9 +862,6 @@ ul {
 #navigation .nav-links li a {
   -webkit-transition: opacity 0.6s linear;
   transition: opacity 0.6s linear;
-}
-#navigation .nav-links li a:hover {
-  color: #fff;
 }
 
 #navigation .nav-links li a:focus:after,
@@ -855,7 +880,7 @@ ul {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 1px;
+  height: 2.5px;
   background: #fff;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -872,10 +897,6 @@ ul {
   background: #fff;
 }
 
-a:not(.hover-none):hover {
-  color: #ccc;
-  text-decoration: none;
-}
 .nav-links {
   position: relative;
   list-style-type: none;

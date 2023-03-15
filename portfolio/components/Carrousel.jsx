@@ -1,39 +1,73 @@
 function Carrousel() {
   return (
     <div
-      className="carouselExampleIndicators1 carousel slide"
-      data-ride="carousel"
+      id="carouselExampleDark"
+      className="carousel carousel-dark slide"
+      data-bs-ride="carousel"
     >
+      <div className="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="0"
+          className="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
       <div className="carousel-inner">
-        <img src="../public/space.png" className="img3" alt="" />{" "}
-        <div className="text-center">
-          Latest Project: debtDynamic (Showcasing copy to click and important
-          note features.)
+        <div className="carousel-item active" data-bs-interval="10000">
+          <img src="/space.jpg" alt="..." />
+          <div className="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div className="carousel-item" data-bs-interval="2000">
+          <img src="/space.jpg" alt="..." />
+          <div className="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div className="carousel-item">
+          <img src="/calculatorDemoPic.png" alt="..." />
+          <div className="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
         </div>
       </div>
-      {/* <a
-        className="carousel-control-prev "
-        href="#carouselExampleIndicators2"
-        role="button"
-        data-slide="prev"
+      <button
+        className="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="prev"
       >
         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span className="sr-only">Previous</span>
-      </a>
-      <a
+        <span className="visually-hidden">Previous</span>
+      </button>
+      <button
         className="carousel-control-next"
-        href="#carouselExampleIndicators3"
-        role="button"
-        data-slide="next"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="next"
       >
         <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        <span className="sr-only">Next</span>
-      </a>{" "} */}
-      {/* <ol className="carousel-indicators">
-        <li data-target="#carouselExampleIndicators1" data-slide-to="0"></li>
-        <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
-      </ol>{" "} */}
+        <span className="visually-hidden">Next</span>
+      </button>
     </div>
   );
 }

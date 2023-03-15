@@ -1,12 +1,12 @@
 function FillerOnly() {
   return (
-    <div data-aos="fade-up" className="about">
-      <div className="bracketDiv shadowed col-11 ml-auto m-auto mb-5 ">
+    <div data-aos="fade-up" className="about my-5">
+      <div className="bracketDiv shadowed col-11  m-auto my-5 ">
         <h1>About Developer:</h1>
       </div>{" "}
-      <div className="row  blob m-auto ">
+      <div className="row blob">
         <div
-          className="shadowedLess m-auto col-11  "
+          className="shadowedLess m-auto col-10"
           style={{ borderTop: "solid black", borderBottom: "solid black" }}
         >
           <div className="showcaseDiv w-100 aboutFirst">
@@ -33,8 +33,11 @@ function FillerOnly() {
               </div>
             </div>{" "}
           </div>{" "}
-          <div className="fillerOnly gradientColor text-center color-change-5x  ">
-            <div className="bracketDiv">
+          <div className="fillerOnly gradientColor text-center color-change-5x aboutPicDiv ">
+            <div
+              className="bracketDiv my-0"
+              style={{ outline: "none", border: "solid black 3px" }}
+            >
               <img
                 className="img2 shadowed color-change-3x my-3"
                 src="profilePic3.png"

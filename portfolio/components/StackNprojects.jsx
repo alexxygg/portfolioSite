@@ -1,89 +1,89 @@
+import NIceRow from "./NIceRow";
+
 function BfterNav() {
   return (
-    <div className="includingPanel col-11 m-auto">
-      <div className="allProjects ">
-        <h2 className="mb-5 techs shadowed  bracketDiv">
-          Technologies I've worked with:
-        </h2>{" "}
-        <div className="main1">
-          <div>Languages</div>
-          <div>HTML, CSS, JavaScript</div>
-          <nav>
-            <div className="div ">
-              <img className=" btn" src="html.png" alt="" />
-            </div>
-            <div>
-              <img className="btn" src="css3.png" alt="" />
-            </div>
-            <div>
-              <img className="btn" src="javascript.png" alt="" />
-            </div>
-          </nav>
+    <>
+      <div className="includingPanel col-11 m-auto ">
+        <div className="allProjects  ">
+          <h2 className="mb-5 techs shadowed  bracketDiv ">
+            Technologies I've worked with:
+          </h2>{" "}
         </div>
-        <div className="main1">
-          <div>CSS Frameworks</div>
-          <div>Bootstrap</div>
-          <nav>
-            <div>
-              <img className="btn" src="bootstrap.png" alt="" />
+      </div>
+      <div className="includingPanel col-11 m-auto ">
+        <div className="allProjects  ">
+          <div className="div mb-5">
+            <div className="main1 pt-5">
+              <div>Languages</div>
+              <div>HTML, CSS, JavaScript</div>
+              <nav>
+                <div className="div ">
+                  <img className=" btn" src="html.png" alt="" />
+                </div>
+                <div>
+                  <img className="btn" src="css3.png" alt="" />
+                </div>
+                <div>
+                  <img className="btn" src="javascript.png" alt="" />
+                </div>
+              </nav>
             </div>
-          </nav>
-        </div>
-        <div className="main1">
-          <div>JS Frameworks</div>
-          <div>React</div>
-          <nav>
-            {" "}
-            <div>
-              <img className="btn" src="react.png" alt="" />
+            <div className="main1">
+              <div>CSS Frameworks</div>
+              <div>Bootstrap</div>
+              <nav>
+                <div>
+                  <img className="btn" src="bootstrap.png" alt="" />
+                </div>
+              </nav>
             </div>
-          </nav>
-        </div>{" "}
-        <div className="main1">
-          <div>Backend Routing</div>
-          <div>NextJS, NodeJS and ExpressJS</div>
-          <nav>
-            {" "}
-            <div>
-              <img className="btn" src="nextjs.png" alt="" />
+            <div className="main1">
+              <div>JS Frameworks</div>
+              <div>React</div>
+              <nav>
+                {" "}
+                <div>
+                  <img className="btn" src="react.png" alt="" />
+                </div>
+              </nav>
             </div>{" "}
-            <div>
-              <img className="btn" src="node-js.png" alt="" />
-            </div>
-            <div>
-              <img className="btn" src="express.png" alt="" />
-            </div>
-          </nav>
-        </div>{" "}
-        <div className="main1">
-          <div>Databases</div>
-          <div>Supabase and MongoDB</div>
-          <nav>
-            {" "}
-            <div>
-              <img className="btn" src="supabase.png" alt="" />
-            </div>
-            <div>
-              <img className="btn" src="mongodb.png" alt="" />
-            </div>
-          </nav>
+            <div className="main1">
+              <div>Backend Routing</div>
+              <div>NextJS, NodeJS and ExpressJS</div>
+              <nav>
+                {" "}
+                <div>
+                  <img className="btn" src="nextjs.png" alt="" />
+                </div>{" "}
+                <div>
+                  <img className="btn" src="node-js.png" alt="" />
+                </div>
+                <div>
+                  <img className="btn" src="express.png" alt="" />
+                </div>
+              </nav>
+            </div>{" "}
+            <div className="main1 pb-5">
+              <div>Databases</div>
+              <div>Supabase and MongoDB</div>
+              <nav>
+                {" "}
+                <div>
+                  <img className="btn" src="supabase.png" alt="" />
+                </div>
+                <div>
+                  <img className="btn" src="mongodb.png" alt="" />
+                </div>
+              </nav>
+            </div>{" "}
+          </div>
         </div>
-        <div>
-          <h2 className="mysteryh2 mt-5">
-            <a
-              // target for open link in new tab
-              target="_blank"
-              className="btn btn-success mb-5"
-              type="button"
-              href="https://github.com/alexxygg"
-            >
-              ***Check my GitHub profile out!***
-            </a>
-          </h2>
-        </div>
-        <div className="main2">
+      </div>
+      <div>
+        {" "}
+        <div className="main2 my-5 col-11 m-auto">
           <h2 className="mb-5 shadowed  bracketDiv">My projects </h2>
-          <div className=" projectsDiv m-auto ">
+          <div className=" projectsDiv m-auto mb-5 pb-5">
             <div>
               <p className="text-center">Calculator</p>
               <a href="https://alexxyggcalculator.netlify.app/" target="_blank">
@@ -169,7 +169,7 @@ function BfterNav() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

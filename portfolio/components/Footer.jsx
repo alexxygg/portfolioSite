@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="text-center elegant">
+    <footer className="text-center elegant rgba2">
       <div className="text-center p-3 ">
         <span className="niceEffect">alexxygg ©2022 </span>
         <a

@@ -26,7 +26,7 @@ function UnderForm() {
         </div>
       </div>
       <div>
-        <button className="downloadCV shadowed btn" type="button">
+        <button className="downloadCV shadowed btn my-5" type="button">
           <a
             className="resumeLink"
             href="./ourResume.pdf"

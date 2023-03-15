@@ -17,8 +17,7 @@ function App() {
     <>
       <Panel />
       <NavBar />
-      <Carrousel />
-      <Quotes />
+      {/* <Carrousel /> */}
       <NIceRow oddNumber="2" />
       <StackNprojects />
       <NIceRow oddNumber="3" />
@@ -32,8 +31,9 @@ function App() {
       <NIceRow oddNumber="7" />
       <Balance quote="Design you can rely on." />
       <NIceRow oddNumber="8" />
+      <Quotes />
       <Footer />
-      <ProgressBar />
+      {/* <ProgressBar /> */}
     </>
   );
 }
