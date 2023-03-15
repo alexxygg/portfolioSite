@@ -389,7 +389,7 @@ h2 {
   height: 221px;
 }
 .theForm {
-  height: 370px;
+  height: 300px;
 }
 .sideOfForm > div {
   border-bottom: solid white;
@@ -415,7 +415,7 @@ h2 {
   border-top: solid blue;
   /* border-left: solid blue; */
   border-bottom: solid blue;
-  height: 370px;
+  height: 300px;
 }
 .newRule {
   width: auto;
@@ -462,12 +462,12 @@ h2 {
 .niceEffect {
   color: var(--purple-color);
   text-shadow: 0 0 2px blue, 0 0 1px blue, 0 0 1px blue, 0 0 4px blue,
-    0 0 3px blue, 0 0 15px blue, 0 0 2px blue, 0 0 15px blue;
+    0 0 4px blue, 0 0 3px blue, 0 0 5px blue, 0 0 2px blue, 0 0 5px blue;
 }
 .niceEffect2 {
   color: var(--purple-color);
-  text-shadow: 0 0 5px red, 0 0 2px red, 0 0 2px red, 0 0 8px red, 0 0 12px red,
-    0 0 10px red, 0 0 10px red, 0 0 10px red;
+  text-shadow: 0 0 2px red, 0 0 1px red, 0 0 1px red, 0 0 4px red, 0 0 4px red,
+    0 0 3px red, 0 0 5px red, 0 0 2px red, 0 0 5px red;
 }
 
 .neonText {
@@ -544,7 +544,7 @@ h2 {
 .rgba2 {
   background-color: rgba(0, 0, 0, 0.9);
   margin: 0;
-  padding: 20px;
+  padding: 5px 20px;
 }
 .rgba2 {
   background-color: black;
@@ -639,8 +639,14 @@ h2 {
 }
 .exampleOutlineGradientDiv2 {
   color: black;
-  background: linear-gradient(90deg, red 0%, blue 33%, brown 66%);
-  -webkit-text-stroke: 0.2rem transparent;
+  background: linear-gradient(
+    90deg,
+    rgb(40, 1, 181),
+    rgb(4, 238, 81) 50%,
+    blue 70%,
+    66%
+  );
+  -webkit-text-stroke: 4px transparent;
   background-clip: border-box;
   -webkit-background-clip: text;
 }
@@ -687,11 +693,7 @@ h2 {
 .footerName {
   color: red;
 }
-.elegant {
-  border-top: black 3px solid;
-  border-bottom: black 15px solid;
-  padding-bottom: 15px;
-}
+
 /* color of blinking | bar on input data entry */
 .date {
   color: blue;
@@ -762,16 +764,18 @@ h2 {
 .lastWords {
   height: max-content;
   background-color: rgb(4, 238, 81);
+  width: 100%;
+  margin-left: auto;
 }
 .motivational2 > h3 {
   justify-content: end;
-  text-align: end;
+  text-align: center;
 }
 .balance {
   text-align: center;
   height: auto;
-  background-color: transparent;
-  padding-bottom: 20px;
+  background-image: url("/wave3.svg");
+  background-size: cover;
 }
 
 .professional {
@@ -780,7 +784,7 @@ h2 {
   justify-content: space-around;
   align-items: center;
   color: blue;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.9);
   font-size: 50px;
 }
 

@@ -3,7 +3,7 @@ import React from "react";
 function UnderForm() {
   return (
     <>
-      <div className="sideOfForm col col-10 col-lg-5  shadowedLess color-change-5x">
+      <div className="sideOfForm col col-10 col-lg-5  shadowedLess color-change-5x mt-5">
         <div className="color-change-4x w-100 h-100 ">
           <div>
             You can also contact me through email. <br />

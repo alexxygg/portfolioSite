@@ -15,23 +15,20 @@ import Balance from "../components/Balance";
 function App() {
   return (
     <>
-      <Panel />
       <NavBar />
-      {/* <Carrousel /> */}
-      <NIceRow oddNumber="2" />
-      <StackNprojects />
       <NIceRow oddNumber="3" />
       <ResultsSection />
-      <NIceRow oddNumber="4" />
+      {/* <Carrousel /> */}
+      <NIceRow oddNumber="2" />
       <AboutDev />
+      <NIceRow oddNumber="7" />
+      <Balance quote="Design you can rely on." />
+      <NIceRow oddNumber="4" />
+      <StackNprojects />
       <NIceRow oddNumber="5" />
       <Balance quote="Make your websites feel ALIVE." />
       <NIceRow oddNumber="6" />
       <Form />
-      <NIceRow oddNumber="7" />
-      <Balance quote="Design you can rely on." />
-      <NIceRow oddNumber="8" />
-      <Quotes />
       <Footer />
       {/* <ProgressBar /> */}
     </>

@@ -1,5 +1,5 @@
 import NIceRow from "./NIceRow";
-
+import Quotes from "./Quotes";
 function BfterNav() {
   return (
     <>
@@ -79,6 +79,10 @@ function BfterNav() {
           </div>
         </div>
       </div>
+      <NIceRow oddNumber="8" />
+      <Quotes />
+      <NIceRow oddNumber="8" />
+
       <div>
         {" "}
         <div className="main2 my-5 col-11 m-auto">

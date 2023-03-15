@@ -15,14 +15,14 @@ function Form() {
         style={{
           border: "solid white 2px",
           outline: "solid black 2px",
-          backgroundColor: "red",
+          backgroundColor: "blue",
         }}
       >
         Form currently disabled.
       </div>
       <div className="  row row2 w-100 m-auto rgba mb-5">
         <form
-          className="col col-10 col-lg-5 m-auto theForm rgba  "
+          className="col col-10 col-lg-5 m-auto theForm rgba mt-5 "
           data-netlify="true"
           name="contact"
           method="POST"

@@ -1,7 +1,7 @@
 function Footer() {
   return (
-    <footer className="text-center elegant rgba2">
-      <div className="text-center p-3 ">
+    <footer className="text-center  rgba2 mt-5">
+      <div className="text-center px-3 ">
         <span className="niceEffect">alexxygg ©2022 </span>
         <a
           target="_blank"
@@ -11,7 +11,7 @@ function Footer() {
           Designed and coded by Alejandro Perez
         </a>
       </div>
-      アレクシーグ
+      <div>アレクシーグ</div>
     </footer>
   );
 }

@@ -10,14 +10,11 @@ function Quotes() {
   return (
     <>
       {" "}
-      {/* <h2 className="date">({date})</h2> */}
       <div thevalue={theQuotes} className="quote niceEffect  rgba2">
         {/* “Have no fear of perfection. You'll never reach it.” - Salvador Dali */}
         {quoteMaker()} <br />
       </div>
-      <div className="moreAboutMe">
-        <img className="downArrow" src="./downward.png" />
-      </div>
+      <div className="rgba2 text-center">(Quote of the Day/Refresh page)</div>
     </>
   );
 }
