@@ -81,8 +81,7 @@ function BfterNav() {
       </div>
       <NIceRow oddNumber="8" />
       <Quotes />
-      <NIceRow oddNumber="8" />
-
+      <div id="projects"></div> <NIceRow oddNumber="8" />
       <div>
         {" "}
         <div className="main2 my-5 col-11 m-auto">

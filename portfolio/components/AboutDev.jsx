@@ -2,7 +2,7 @@ function FillerOnly() {
   return (
     <div data-aos="fade-up" className="about my-5">
       <div className="bracketDiv shadowed col-11  m-auto my-5 ">
-        <h1>About Developer:</h1>
+        <h1>About</h1>
       </div>{" "}
       <div className="row blob">
         <div
@@ -29,7 +29,7 @@ function FillerOnly() {
                   paddingBottom: "10px",
                 }}
               >
-                Front-end and Back-end self-taught developer.
+                Front-end/Back-end
               </div>
             </div>{" "}
           </div>{" "}

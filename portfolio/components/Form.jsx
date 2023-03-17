@@ -14,8 +14,11 @@ function Form() {
         className=" text-center  my-3"
         style={{
           border: "solid white 2px",
-          outline: "solid black 2px",
-          backgroundColor: "blue",
+          outline: "solid black 4px",
+          borderRadius: "2rem",
+          backgroundColor: "red",
+          fontWeight: "900",
+          textTransform: "uppercase",
         }}
       >
         Form currently disabled.
@@ -34,7 +37,7 @@ function Form() {
             </label>
             <input
               type="text"
-              className="exampleInputName1  bg-white form-control"
+              className="exampleInputName1  bg-white form-control "
               aria-describedby="nameHelp"
               placeholder="Enter name"
             />

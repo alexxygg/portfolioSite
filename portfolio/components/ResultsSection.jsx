@@ -19,7 +19,7 @@ function ResultsSection() {
           LOOKING
         </h3>{" "}
         <h3 className="gradientText outlineGradientText row col"> FOR.</h3>
-        <h3 className="lastWords row col">Every Time</h3>
+        <h3 className="lastWords row col">(Scroll down)</h3>
         <div className="moreAboutMe">
           <img className="downArrow" src="./downward.png" />
         </div>

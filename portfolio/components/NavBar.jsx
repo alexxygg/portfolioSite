@@ -26,15 +26,20 @@ function NavBar() {
               </a>
             </li>
             <li className="nav-link">
-              <a className="" href="#experience">
-                Experience
-              </a>
-            </li>
-            <li className="nav-link">
               <a className="" href="#about">
                 About
               </a>
             </li>
+            <li className="nav-link">
+              <a className="" href="#stack">
+                Tech Stack
+              </a>
+            </li>
+            <li className="nav-link">
+              <a className="" href="#projects">
+                Projects
+              </a>
+            </li>{" "}
             <li className="nav-link">
               <a className="" href="#contact">
                 Contact

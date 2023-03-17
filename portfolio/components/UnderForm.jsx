@@ -9,8 +9,7 @@ function UnderForm() {
             You can also contact me through email. <br />
           </div>
           <div>
-            <span style={{ color: "rgb(4,238,81)" }}>Click</span> on my
-            <span style={{ color: "rgb(4,238,81)" }}> email address </span>
+            Click on my email address
             <br /> to create a new Gmail draft with me in a NEW TAB. <br />
           </div>
           <div>
@@ -26,7 +25,7 @@ function UnderForm() {
         </div>
       </div>
       <div>
-        <button className="downloadCV shadowed btn my-5" type="button">
+        <button className="downloadCV shadowed  my-5 submitBtn" type="button">
           <a
             className="resumeLink"
             href="./ourResume.pdf"

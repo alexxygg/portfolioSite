@@ -125,7 +125,6 @@ nav {
 .nav-link {
   /* background-color: blue; */
   color: gold;
-  height: 30px;
   font-family: monospace;
   min-width: max-content;
   margin-right: 15px;
@@ -247,6 +246,7 @@ h2 {
 .downArrow {
   height: 50px;
   width: 50px;
+  margin-left: auto;
 }
 .moreAboutMe {
   display: flex;
@@ -271,7 +271,7 @@ h2 {
   background-color: rgb(4, 238, 81);
   transition: all 0.5s ease;
   color: black !important;
-  outline: solid black;
+  outline: solid blue;
 }
 .footer {
   border-top: solid black 4px;
@@ -372,7 +372,7 @@ h2 {
 .downloadCV {
   min-width: max-content;
   width: 50%;
-  height: max-content;
+  height: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -390,6 +390,7 @@ h2 {
 }
 .theForm {
   height: 300px;
+  outline: solid blue 2px;
 }
 .sideOfForm > div {
   border-bottom: solid white;
@@ -412,10 +413,12 @@ h2 {
   /* background: url("/whiteBackground.jpg"); */
   /* background-size: cover; */
   /* border-radius: 15% 0 0 15%; */
-  border-top: solid blue;
+  border: solid blue 2px;
   /* border-left: solid blue; */
-  border-bottom: solid blue;
   height: 300px;
+}
+textarea {
+  resize: none;
 }
 .newRule {
   width: auto;
@@ -451,6 +454,9 @@ h2 {
 }
 .formButton {
   border: none;
+}
+.formWrapper {
+  background-color: rgba(255, 0, 0, 0.7);
 }
 .emailSpam {
   color: rgb(1, 40, 80);
@@ -750,6 +756,7 @@ h2 {
 
 .backgroundDiv {
   background-color: black;
+  border: solid black;
 }
 .gradientText {
   background: linear-gradient(90deg, rgb(4, 238, 81) 0%, blue 100%);
@@ -764,8 +771,9 @@ h2 {
 .lastWords {
   height: max-content;
   background-color: rgb(4, 238, 81);
-  width: 100%;
-  margin-left: auto;
+  min-width: 100%;
+  color: black;
+  font-weight: 700;
 }
 .motivational2 > h3 {
   justify-content: end;
@@ -776,6 +784,7 @@ h2 {
   height: auto;
   background-image: url("/wave3.svg");
   background-size: cover;
+  text-transform: uppercase;
 }
 
 .professional {
@@ -832,8 +841,8 @@ h2 {
   }
 }
 .color-change-4x {
-  animation: color-change-4x 10s infinite alternate linear both;
-  -webkit-animation: color-change-4x 10s infinite alternate linear both;
+  animation: color-change-4x 20s infinite alternate linear both;
+  -webkit-animation: color-change-4x 20s infinite alternate linear both;
 }
 
 @keyframes color-change-4x {
