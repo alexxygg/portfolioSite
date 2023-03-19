@@ -237,8 +237,8 @@ h2 {
 }
 
 .quote {
-  /* background: url("//codePortfolio.jpg"); */
-  /* background: url("//alternatePortfolioPic.jpg"); */
+  /* background: url("/codePortfolio.jpg"); */
+  /* background: url("/alternatePortfolioPic.jpg"); */
   display: flex;
   justify-content: center;
   color: ghostwhite;
@@ -412,7 +412,7 @@ h2 {
   margin-top: 5px;
   text-align: center;
   color: ghostwhite;
-  /* background: url("//whiteBackground.jpg"); */
+  /* background: url("/whiteBackground.jpg"); */
   /* background-size: cover; */
   /* border-radius: 15% 0 0 15%; */
   border: solid blue 2px;
@@ -542,7 +542,7 @@ textarea {
 }
 
 .blob {
-  background: url("//aboutMeBackground3.svg");
+  background: url("/aboutMeBackground3.svg");
   margin: 0;
 }
 .contact > .div {
@@ -737,7 +737,7 @@ textarea {
 }
 
 .mainMotivational {
-  background-image: url("//wave3.svg");
+  background-image: url("/wave3.svg");
   background-size: cover;
   height: 80vh;
   width: 90%;
@@ -745,7 +745,7 @@ textarea {
 .motivational {
   max-width: 100%;
   height: 100%;
-  background-image: url("//motivational.jpg");
+  background-image: url("/motivational.jpg");
   background-size: cover;
   background-color: blue;
   border: black 3px solid;
@@ -784,7 +784,7 @@ textarea {
 .balance {
   text-align: center;
   height: auto;
-  background-image: url("//wave3.svg");
+  background-image: url("/wave3.svg");
   background-size: cover;
   text-transform: uppercase;
 }
