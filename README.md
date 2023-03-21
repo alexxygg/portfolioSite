@@ -1,1 +1,2 @@
 # portfolioSite
+images already compressesed
